@@ -35,6 +35,10 @@ import unik.UnikQProcess 1.0
                 if(uqp.index===r.textList.length-1){
                     r.speaking=false
                 }
+                if(uqp.index!==r.textList.length-1&&uqp.index!==-1){
+                    r.next()
+                }
+                //r.currentIndex++
                 uqp.destroy(500)
             }
         }

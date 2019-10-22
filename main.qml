@@ -40,10 +40,11 @@ ApplicationWindow {
     }
     USpeak{
         id: uspeak
-    }
+    }    
     Component.onCompleted: {
         let m0=as.mod.split('-')
         uspeak.add('Cedimax ha iniciado.')
         uspeak.add('Cargando el modulo '+m0[0]+' '+m0[1])
+        uspeak.play()
     }
 }
