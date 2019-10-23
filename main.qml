@@ -38,6 +38,10 @@ ApplicationWindow {
         sequence: 'Right'
         onActivated: matrix.derecha()
     }
+    Shortcut{
+        sequence: 'Return'
+        onActivated: matrix.entrar()
+    }
     USpeak{
         id: uspeak
     }    
